@@ -9,9 +9,8 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'orbit-report';
-}
 
-let sourceList: Satellite[];
+  sourceList: Satellite[]; 
 
   constructor() {
     this.sourceList = [
@@ -21,4 +20,5 @@ let sourceList: Satellite[];
       new Satellite("GPS 938", "Positioning", "2001-11-01", "HIGH", true),
       new Satellite("ISS", "Space Station", "1998-11-20", "LOW", true),
     ];
-  }
+  };
+}
